@@ -1,6 +1,9 @@
 import React from 'react';
 import {observer} from "mobx-react";
 import {configure} from "mobx";
+// import SidebarExampleSidebar from "components/sidebar";
+import SidebarExampleTransitions from "components/sidebar";
+// import SidebarExampleSidebar from "components/sidebar2";
 
 configure({enforceActions: 'observed'})
 
@@ -13,11 +16,11 @@ class Index extends React.Component {
 
         return (
             <div className='d-flex flex-column'>
-                <header className="bg-dark">
-                    header
-                </header>
+                {/*<header className="bg-dark">*/}
+                {/*    /!*<SidebarExampleSidebar/>*!/*/}
+                {/*</header>*/}
                 <div className='content bg-light'>
-                    content
+                    <SidebarExampleTransitions/>
                 </div>
                 <footer className='bg-info'>
                     footer
