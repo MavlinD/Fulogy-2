@@ -1,32 +1,58 @@
 @import "./variables";
 
 
-html{
-    height: 100%;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+html {
+  height: 100%;
 }
 
-section{
-   flex-basis: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.sb-content{
+section {
+  flex-basis: auto;
+}
+
+.sb-content {
   flex-basis: 85vh
 }
 
-footer{
+footer {
   flex-basis: 15vh;
 }
 
 
-i.cart.icon{
+i.cart.icon {
   margin-top: -8px;
 }
 
-.logo{
+.logo {
   flex-basis: 100%;
 }
+
+table.ui.basic {
+  td {
+    border: none;
+  }
+}
+
+div.left.my, div.right.my {
+  flex-basis: 50%;
+}
+
+div.carousel.my {
+  flex-basis: 50%;
+}
+
+i.icon.my{
+  flex-basis: 50px;
+  font-size: 1.5em;
+
+  &:before{
+    //padding: 40px;
+  }
+
+}
+
