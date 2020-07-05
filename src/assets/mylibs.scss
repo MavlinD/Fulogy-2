@@ -1,0 +1,123 @@
+.mw-50 {
+  max-width: 50%;
+}
+
+.fsz-3 {
+  font-size: 0.3em;
+}
+
+.fsz-35 {
+  font-size: 0.35em;
+}
+
+.fsz-4 {
+  font-size: 0.4em;
+}
+
+.fsz-45 {
+  font-size: 0.45em;
+}
+
+.fsz-5 {
+  font-size: 0.5em;
+}
+
+.fsz-55 {
+  font-size: 0.55em;
+}
+
+.fsz-6 {
+  font-size: 0.6em;
+}
+
+.fsz-65 {
+  font-size: 0.65em;
+}
+
+.fsz-7 {
+  font-size: 0.7em;
+}
+
+.fsz-75 {
+  font-size: 0.75em;
+}
+
+.fsz-8 {
+  font-size: 0.8em;
+}
+
+.fsz-85 {
+  font-size: 0.85em;
+}
+
+.fsz-9 {
+  font-size: 0.9em;
+}
+
+.fsz-95 {
+  font-size: 0.95em;
+}
+
+.fsz-10 {
+  font-size: 1em;
+}
+
+.fsz-11 {
+  font-size: 1.1em !important;
+}
+
+.fsz-12 {
+  font-size: 1.2em !important;
+}
+
+.fsz-13 {
+  font-size: 1.3em !important;
+}
+
+.fsz-14 {
+  font-size: 1.4em !important;
+}
+
+.fsz-15 {
+  font-size: 1.5em !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.visible {
+  & .menu.transition {
+    display: block !important;
+  }
+}
+
+.ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text {
+  color: #105B63;
+}
+
+.trz {
+  transition: all 300ms !important;
+}
+
+.outline-focus {
+  outline-offset: 0 !important;
+  outline: transparent dotted 1px !important;
+}
+
+.outline-focus {
+  &:hover, &.active, &:active, &:focus {
+    outline-offset: 7px !important;
+    outline: coral dotted 1px !important;
+  }
+}
+
+
+.btn-outline-secondary {
+  //color: #6c757d;
+  border-color: #ced4da;
+}
+
+.ui.checkbox:hover, .ui.checkbox:active{
+  outline-color: transparent !important;
+}
