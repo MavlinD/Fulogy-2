@@ -12,8 +12,16 @@ class Index extends React.Component {
     render() {
 
         return (
-            <div className="bg-dark">
-                test react
+            <div className='d-flex flex-column'>
+                <header className="bg-dark">
+                    header
+                </header>
+                <div className='content bg-light'>
+                    content
+                </div>
+                <footer className='bg-info'>
+                    footer
+                </footer>
             </div>
         )
     }
