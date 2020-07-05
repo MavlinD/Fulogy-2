@@ -41,7 +41,7 @@ VerticalSidebar.propTypes = {
 }
 
 @observer
-export default class SidebarExampleTransitions extends Component {
+export default class MySidebar extends Component {
 
     store = new Sidebar_Model()
 
@@ -56,7 +56,7 @@ export default class SidebarExampleTransitions extends Component {
         const {animation, dimmed, direction, visible} = this.state
 
         return (
-            <div className='bg-dark'>
+            <div className='bg-dark d-flex flex-column'>
                 <div onClick={() => this.store.setHideSidebar()}
                      className='d-flex align-items-center'>
                     <div className='text-white mx-3 logo'>Fulogy</div>
@@ -66,7 +66,7 @@ export default class SidebarExampleTransitions extends Component {
                         <Icon name={this.store.btnIcon}/>
                     </Button>
                 </div>
-                <Sidebar.Pushable as={Segment} className='bg-white m-0'>
+                <Sidebar.Pushable as={Segment} className='rounded-0 border-0 shadow-none sb-content bg-white m-0'>
                     <VerticalSidebar
                         animation={animation}
                         direction={direction}
@@ -75,8 +75,8 @@ export default class SidebarExampleTransitions extends Component {
 
                     <Sidebar.Pusher dimmed={dimmed && visible}>
                         <Segment basic>
-                            <Header as='h3'>Application Content</Header>
-                            <Image src='/src/assets/images/wireframe/paragraph.png'/>
+                            {/*<Header as='h3'>Application Content</Header>*/}
+                            {/*<Image src='/src/assets/images/wireframe/paragraph.png'/>*/}
                         </Segment>
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
@@ -84,6 +84,3 @@ export default class SidebarExampleTransitions extends Component {
         )
     }
 }
-
-    // flex-basis: 100%;
-    // margin: 0 20px;

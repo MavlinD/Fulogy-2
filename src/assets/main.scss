@@ -1,16 +1,27 @@
 @import "./variables";
 
-header{
-  flex: 1 1 5vh;
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.content{
-  flex: 1 1 90vh;
+section{
+   flex-basis: auto;
+}
+
+.sb-content{
+  flex-basis: 85vh
 }
 
 footer{
-  flex: 1 1 10vh;
+  flex-basis: 15vh;
 }
+
 
 i.cart.icon{
   margin-top: -8px;
