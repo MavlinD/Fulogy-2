@@ -57,9 +57,9 @@ export default class SidebarExampleTransitions extends Component {
 
         return (
             <div className='bg-dark'>
-                <div
-                    onClick={() => this.store.setHideSidebar()}
-                     className='d-flex justify-content-end align-items-center'>
+                <div onClick={() => this.store.setHideSidebar()}
+                     className='d-flex align-items-center'>
+                    <div className='text-white mx-3 logo'>Fulogy</div>
                     <Icon name='cart' className='text-white'/>
                     <Button onClick={event => this.store.setToggleSidebar(event)}
                             icon className='bg-transparent text-white'>
@@ -84,3 +84,6 @@ export default class SidebarExampleTransitions extends Component {
         )
     }
 }
+
+    // flex-basis: 100%;
+    // margin: 0 20px;
