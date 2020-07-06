@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "hash-sum": "^2.0.0",
     "mobx": "^5.15.2",
     "mobx-react": "^6.1.5",
     "prop-types": "latest",

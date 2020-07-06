@@ -49,10 +49,49 @@ div.carousel.my {
 i.icon.my{
   flex-basis: 50px;
   font-size: 1.5em;
-
-  &:before{
-    //padding: 40px;
-  }
-
+  background: rgba(0, 0, 0, 0.30);
+  cursor: pointer;
 }
 
+.ui.top.attached.label:first-child + :not(.attached){
+  margin-top: 0 !important;
+}
+
+img.my{
+  //max-width: 180px !important;
+}
+
+.segment.my.ui.mw-100{
+  transition: max-width .125s ease-out;
+}
+
+.segment.my.ui.mw-80{
+  transition: max-width .125s ease-out .125s;
+}
+
+.my.column{
+  //transition: margin .125s .125s ease-out;
+}
+
+.column:nth-child(2) {
+  .segment.my.ui {
+    //max-width: 80%;
+
+    //margin-left: -15px;
+    //margin-right: -35px;
+  }
+}
+
+.column:first-child {
+  .segment.my.ui {
+    //margin-left: -15px;
+    //margin-right: -35px;
+  }
+}
+
+.column:last-child {
+  .segment.my.ui {
+    //margin-left: -15px;
+    //margin-right: -15px;
+  }
+}
