@@ -11,7 +11,7 @@ export default class MyRadioItem extends React.Component {
 
         return (
             <Grid.Column
-                className={`my outline-blue ${props.odd ? 'mx-4' : 'm-0'} p-0 d-flex justify-content-center align-items-center`}>
+                className={`my outline-blue ${props.odd ? 'mx-1' : 'm-0'} p-0 d-flex justify-content-center align-items-center`}>
                     <Segment onClick={props.handleClick}
                               className={`my overflow-hidden border-0 outline-green p-0 ${props.active ? 'mw-100' : 'mw-80'}`}>
                     <Image

@@ -16,4 +16,7 @@ import 'semantic-ui-css/components/table.min.css'
 import 'semantic-ui-css/components/label.min.css'
 // import 'semantic-ui-css/components/'
 // import 'semantic-ui-css/components/'
+
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import 'semantic-ui-css/components/dropdown.min.css'
