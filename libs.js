@@ -1,6 +1,6 @@
 // set place for common library
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'assets/dev.scss';
+// import 'assets/dev.scss';
 import 'assets/mylibs.scss';
 // import './src/assets/bootstrap/bootstrap.scss';
 import 'semantic-ui-css/components/checkbox.min.css'

@@ -46,52 +46,31 @@ div.carousel.my {
   flex-basis: 50%;
 }
 
-i.icon.my{
+i.icon.my {
   flex-basis: 50px;
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.30);
   cursor: pointer;
 }
 
-.ui.top.attached.label:first-child + :not(.attached){
+.ui.top.attached.label:first-child + :not(.attached) {
   margin-top: 0 !important;
 }
 
-img.my{
-  //max-width: 180px !important;
-}
+.segment.my.ui {
+  box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.64);
 
-.segment.my.ui.mw-100{
-  transition: max-width .125s ease-out;
-}
-
-.segment.my.ui.mw-80{
-  transition: max-width .125s ease-out .125s;
-}
-
-.my.column{
-  //transition: margin .125s .125s ease-out;
-}
-
-.column:nth-child(2) {
-  .segment.my.ui {
-    //max-width: 80%;
-
-    //margin-left: -15px;
-    //margin-right: -35px;
+  &.mw-100 {
+    transition: max-width .125s ease-out;
   }
+
+  &.mw-80 {
+    transition: max-width .125s ease-out .125s;
+  }
+
+  font-size: 1.0em;
 }
 
-.column:first-child {
-  .segment.my.ui {
-    //margin-left: -15px;
-    //margin-right: -35px;
-  }
-}
-
-.column:last-child {
-  .segment.my.ui {
-    //margin-left: -15px;
-    //margin-right: -15px;
-  }
+.my.label {
+  background: rgba(0, 0, 0, 0.27);
 }

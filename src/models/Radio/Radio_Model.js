@@ -14,7 +14,11 @@ export default class Radio_Model extends Main_Model {
 
     @computed
     get getRadioList() {
-        return ['day','hot', 'cold']
+        return [
+            {name: 'day', label: 'Дневной свет'},
+            {name: 'hot', label: 'Теплый свет'},
+            {name: 'cold', label: 'Холодный свет'}
+        ]
     }
 
 }

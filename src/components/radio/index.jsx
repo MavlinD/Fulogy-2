@@ -24,9 +24,9 @@ export default class MyRadio extends React.Component {
                     <Grid.Row className='p-4 outline-crimson d-flex flex-nowrap justify-content-center'>
                         {store.getRadioList.map((val, ind) =>
                             <MyRadioItem key={hex(val)}
-                                         active={store.activeItem === val}
+                                         active={store.activeItem === val.name}
                                          odd={ind % 2 === 0}
-                                         handleClick={() => this.handleClick(val)}
+                                         handleClick={() => this.handleClick(val.name)}
                                          val={val}
                             />
                         )}
