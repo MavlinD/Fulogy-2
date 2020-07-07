@@ -14,6 +14,7 @@ import MyTable from 'components/table'
 import Sidebar_Model from "src/models/Sidebar/Sidebar_Model";
 import MyRadio from "components/radio";
 import MyCarousel from "components/carousel";
+import MyMenu from "components/menu";
 
 const VerticalSidebar = ({animation, direction, visible}) => (
     <Sidebar

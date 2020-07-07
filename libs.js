@@ -14,7 +14,7 @@ import 'semantic-ui-css/components/icon.min.css'
 import 'semantic-ui-css/components/header.min.css'
 import 'semantic-ui-css/components/table.min.css'
 import 'semantic-ui-css/components/label.min.css'
-// import 'semantic-ui-css/components/'
+import 'semantic-ui-css/components/tab.min.css'
 // import 'semantic-ui-css/components/'
 
 

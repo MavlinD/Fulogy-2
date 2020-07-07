@@ -5,23 +5,12 @@ configure({enforceActions: 'observed'})
 
 export default class Sidebar_Model extends Main_Model {
 
-
     @observable activeItem = 'day'
-    // @observable selectedCarouselItem = 0
-    // @observable isChangeRadio = 0
 
     @action
     handleChangeRadio(val) {
         this.activeItem = val
-        // this.isChangeRadio = 1
-        // this.rnd=Math.random()
     }
-
-    // @action
-    // handleChangeCarouselItem(ind) {
-    //     this.selectedCarouselItem = ind
-        // this.isChangeRadio = 0
-    // }
 
     @computed
     get getRadioList() {

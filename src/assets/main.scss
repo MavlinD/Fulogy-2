@@ -16,11 +16,12 @@ section {
 }
 
 .sb-content {
-  flex-basis: 85vh
+  flex-basis: auto;
+  //flex-basis: 85vh
 }
 
 footer {
-  flex-basis: 15vh;
+  //flex-basis: 80px;
 }
 
 
@@ -75,11 +76,27 @@ i.icon.my {
   background: rgba(0, 0, 0, 0.27);
 }
 
-.slider-wrapper li.slide{
+.slider-wrapper li.slide {
   justify-content: center;
   display: flex;
   border-radius: 5px;
   overflow: hidden;
   //background-clip: content-box;
   //align-items: center;
+}
+
+.ui.secondary.pointing.menu .item {
+  align-self: stretch;
+  border-right: 1px solid rgba(34, 36, 38, 0.15);
+  border-left: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: #33c3f0 3px solid;
+
+  &.active, &.active:hover {
+    border-right: none;
+    border-left: none;
+    border-bottom: #33c3f0 3px solid;
+    color: white;
+    background: #33c3f0;
+  }
+
 }
