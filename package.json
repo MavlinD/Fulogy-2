@@ -4,12 +4,10 @@
   "description": "test task #2",
   "main": "init.js",
   "scripts": {
-    "webp": "NODE_ENV='development' webpack",
     "watch": "NODE_ENV='development' webpack --watch",
-    "dev": "sudo killall -9 node && MODE='dev_pisrv' NODE_ENV='development' webpack-dev-server",
-    "hmr": "sudo killall -9 node && MODE='dev_pisrv' NODE_ENV='development' webpack-dev-server --inline --hot",
-    "build": "NODE_ENV='production' webpack --mode=production && sudo killall -9 node",
-    "build-win": "set NODE_ENV=production&&webpack"
+    "dev": "sudo killall -9 node && NODE_ENV='development' webpack-dev-server",
+    "hmr": "sudo killall -9 node && NODE_ENV='development' webpack-dev-server --inline --hot",
+    "build": "NODE_ENV='production' webpack --mode=production"
   },
   "author": "Mavlin Dm.",
   "license": "ISC",
@@ -62,6 +60,7 @@
     "mobx-react": "^6.1.5",
     "prop-types": "latest",
     "react": "^16.12.0",
+    "react-bootstrap-sweetalert": "^5.1.15",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-responsive-carousel": "^3.2.9",

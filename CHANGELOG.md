@@ -9,7 +9,7 @@ This change log follows the format documented in [Keep a CHANGELOG].
 [keep a changelog]: http://keepachangelog.com/
 
 
-## [0.0.0] - 2020-07-05
+## [0.0.0] - 2020-07-08
 
 ### Unreleased
 

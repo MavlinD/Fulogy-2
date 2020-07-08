@@ -100,3 +100,17 @@ i.icon.my {
   }
 
 }
+
+.sweet-alert.my{
+  .back{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: none;
+    box-shadow: none !important;
+    color: gray;
+    &:hover{
+      color: white;
+    }
+  }
+}

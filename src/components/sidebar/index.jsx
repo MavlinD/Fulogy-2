@@ -2,9 +2,7 @@ import PropTypes from 'prop-types'
 import React, {Component} from 'react'
 import {
     Button,
-    Header,
     Icon,
-    Image,
     Menu,
     Segment,
     Sidebar,
@@ -14,7 +12,8 @@ import MyTable from 'components/table'
 import Sidebar_Model from "src/models/Sidebar/Sidebar_Model";
 import MyRadio from "components/radio";
 import MyCarousel from "components/carousel";
-import MyMenu from "components/menu";
+import SweetAlert from "react-bootstrap-sweetalert";
+import {casual} from "components/sidebar/casual";
 
 const VerticalSidebar = ({animation, direction, visible}) => (
     <Sidebar
@@ -52,8 +51,11 @@ export default class MySidebar extends Component {
     state = {
         animation: 'overlay',
         direction: 'right',
-        btnIcon: 'bars'
+        btnIcon: 'bars',
+        showForm: false,
     }
+
+    togglePop = () => this.setState(prevState => ({showForm: !prevState.showForm}))
 
     render() {
 
@@ -87,13 +89,27 @@ export default class MySidebar extends Component {
                                 <MyTable/>
                                 <div
                                     className='outline-blue my bg-info text-white d-flex flex-wrap align-items-center'>
-                                    <Icon name='info' className='icon my h-auto p-2 outline-lightblue'/>
+                                    <Icon name='info' onClick={this.togglePop}
+                                          className='icon my h-auto p-2 outline-lightblue'/>
                                     <div className='text-center flex-grow-1'>Выберите цвет свечения</div>
+                                    <SweetAlert
+                                        style={{width: '100%', height: '100%',}}
+                                        title={''}
+                                        show={this.state.showForm}
+                                        onConfirm={this.togglePop}
+                                        onCancel={this.togglePop}
+                                        confirmBtnBsStyle={'outline-primary'}
+                                        confirmBtnCssClass='back'
+                                        customClass='my'
+                                        confirmBtnText={'<< Вернуться'}
+                                    >
+                                        <div className='content text-left p-3'
+                                             dangerouslySetInnerHTML={{__html: casual}}
+                                        />
+                                    </SweetAlert>
                                 </div>
                                 <MyRadio store={store}/>
                             </div>
-                            {/*<Header as='h3'>Application Content</Header>*/}
-                            {/*<Image src='/src/assets/images/wireframe/paragraph.png'/>*/}
                         </Segment>
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
